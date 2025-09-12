@@ -96,7 +96,7 @@ const Header = () => {
               </ul>
 
               <div className="header-options">
-                <a href="/message">
+                <a href="/message" className="phoneMessage-link">
                   <img src={phoneMessage} alt="phone icon" />
                 </a>
                 <div className="option-box">

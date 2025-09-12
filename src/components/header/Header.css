@@ -16,9 +16,8 @@
   align-items: center;
   gap: 10px;
   border: 2px solid #b22319;
-  border-radius: 3px;
-  padding: 5px 15px;
-  animation: color 2s infinite;
+  border-radius: 10px;
+  padding: 5px 8px;
 }
 
 .test-mode img {
@@ -32,14 +31,24 @@
   font-size: 18px;
   line-height: 150%;
   letter-spacing: -1.1%;
+  animation: colorChange 5s infinite;
 }
-@keyframes color {
-  0%,
-  100% {
-    color: red;
+@keyframes colorChange {
+  20% {
+    color: #ff7675;
   }
- 
-
+  40% {
+    color: #27ae60;
+  }
+  60% {
+    color: #74b9ff;
+  }
+  80% {
+    color: #e74c3c;
+  }
+  100% {
+    color: #a3e4d7;
+  }
 }
 
 .topbar-container {
@@ -85,6 +94,7 @@
   color: #bb8c33;
   font-size: 24px;
 }
+
 .header-options {
   display: flex;
   align-items: center;
@@ -117,11 +127,29 @@
   transition: transform 0.2s ease;
 }
 
+.phoneMessage-link img {
+  transition: transform 0.2s ease;
+}
+.phoneMessage-link img:hover {
+  transform: scale(1.1);
+}
 .like-box img:hover {
   transform: scale(1.1);
 }
 
 .topbar-media li:hover .instagram {
+  color: #e7aa31;
+}
+.topbar-media li:hover .telegram {
+  color: #e7aa31;
+}
+.topbar-media li:hover .twitter {
+  color: #e7aa31;
+}
+.topbar-media li:hover .youtube {
+  color: #e7aa31;
+}
+.topbar-media li:hover .facebook {
   color: #e7aa31;
 }
 .header-navigation {
@@ -132,8 +160,8 @@
 }
 
 .hamburger-menu img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 #header-logo {
