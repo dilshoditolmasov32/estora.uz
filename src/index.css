@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter_28pt-Regular.ttf");
+}
+
+a {
+  text-decoration-line: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+button{
+  background: none;
+  border: none;
+}

@@ -1,0 +1,64 @@
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 0;
+  border-top: 1px solid #b0b1b3;
+  border-bottom: 1px solid #b0b1b3;
+  margin-bottom: 50px;
+}
+.card {
+  background-color: #003d7b;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 30px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  border-color: 3px solid #e7aa31;
+}
+
+.card h3 {
+  font-weight: 700;
+  line-height: 70%;
+  letter-spacing: -1.1%;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #e7aa31;
+}
+
+.card-count-data{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.card p {
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+
+  font-size: 20x;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card .count {
+font-weight: 700;
+font-size: 50px;
+line-height: 110%;
+letter-spacing: -1.1%;
+
+}
+
+.top__small-line{
+    width: 1px;
+    height: 40px;
+    background-color: #FFFFFF;
+}

@@ -1,0 +1,186 @@
+.topBar-section {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #000000cc;
+}
+
+.test-mode {
+  position: absolute;
+  left: 38%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #b22319;
+  border-radius: 3px;
+  padding: 5px 15px;
+  animation: color 2s infinite;
+}
+
+.test-mode img {
+  width: 23px;
+  height: 23px;
+}
+
+.test-mode span {
+  color: #b22319;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+}
+@keyframes color {
+  0%,
+  100% {
+    color: red;
+  }
+ 
+
+}
+
+.topbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  padding: 8px 16px;
+  background: #fff;
+}
+
+.header-options img {
+  width: 30px;
+  height: 30px;
+}
+.topbar-container > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #7a5a25;
+}
+
+.topbar-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar-media {
+  display: flex;
+  gap: 10px;
+}
+
+.topbar-media li {
+  cursor: pointer;
+}
+.topbar-media li .instagram,
+.topbar-media li .telegram,
+.topbar-media li .twitter,
+.topbar-media li .youtube,
+.topbar-media li .facebook {
+  color: #bb8c33;
+  font-size: 24px;
+}
+.header-options {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.option-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #b58b36;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.option-box img {
+  width: 18px;
+  height: 18px;
+}
+
+.option-box:hover {
+  color: #d4a74f;
+}
+
+.like-box img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.like-box img:hover {
+  transform: scale(1.1);
+}
+
+.topbar-media li:hover .instagram {
+  color: #e7aa31;
+}
+.header-navigation {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger-menu img {
+  width: 40px;
+  height: 40px;
+}
+
+#header-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.reklama-login__block,
+.hamburger-logo__block {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.advert-btn {
+  background: #bb8c33;
+  border-radius: 8px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+}
+
+#plus-icon {
+  width: 20px;
+  height: 20px;
+}
+.advert-btn span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  color: #fff;
+}
+
+.login-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  color: #2c2e35;
+}
+
+.login-link img {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,164 @@
+.footer-section {
+  background-color: #003d7b;
+  padding: 30px 0;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  color: #ffffff;
+  background: #bb8c33;
+  padding: 32px 0;
+}
+
+.footer-link li {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+}
+
+.footer-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #b0b1b3;
+  padding-bottom: 40px;
+  padding-top: 70px;
+}
+
+#footer-logo {
+  width: 190px;
+}
+
+.call-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #b0b1b3;
+  padding-bottom: 20px;
+}
+
+#call-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-section p {
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -1.1%;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#phone-number {
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: -1.1%;
+  color: #ffffff;
+}
+
+#phone-number img {
+  width: 85px;
+  height: 85px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#webcite-text {
+  max-width: 450px;
+  width: 100%;
+}
+
+.social-media {
+  display: flex;
+  gap: 40px;
+}
+
+.social-media li {
+  cursor: pointer;
+}
+
+.instagram,
+.telegram,
+.twitter,
+.youtube,
+.facebook {
+  color: #e7aa31;
+  font-size: 36px;
+}
+
+.social-media li:hover .instagram {
+  color: #e7aa31;
+}
+
+.social-media li:hover .instagram,
+.facebook,
+.telegram,
+.twitter {
+  color: #e7aa31;
+}
+.footer-bottom-text {
+  max-width: 1350px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+}
+
+body {
+  position: relative;
+}
+
+.message-btn {
+  cursor: pointer;
+  position: fixed;
+  z-index: 99;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+  padding: 10px 13px;
+  background: #171e3c;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+   overflow: hidden;
+  white-space: nowrap;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(24, 31, 29, 0.7);
+  }
+  70% {
+    transform: scale(1.03);
+    box-shadow: 0 0 0 15px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.message-btn img {
+  width: 25px;
+  height: 25px;
+}
