@@ -99,14 +99,23 @@
   font-size: 36px;
 }
 
-.social-media li:hover .instagram {
+.social-media li .instagram:hover {
   color: #e7aa31;
 }
 
-.social-media li:hover .instagram,
-.facebook,
-.telegram,
-.twitter {
+.topbar-media li:hover .instagram {
+  color: #e7aa31;
+}
+.topbar-media li:hover .telegram {
+  color: #e7aa31;
+}
+.topbar-media li:hover .twitter {
+  color: #e7aa31;
+}
+.topbar-media li:hover .youtube {
+  color: #e7aa31;
+}
+.topbar-media li:hover .facebook {
   color: #e7aa31;
 }
 .footer-bottom-text {
@@ -118,16 +127,16 @@
   letter-spacing: -1.1%;
 }
 
-body {
+.container {
   position: relative;
 }
 
 .message-btn {
   cursor: pointer;
   position: fixed;
-  z-index: 99;
   right: 20px;
   bottom: 20px;
+  z-index: 99;
   display: flex;
   gap: 10px;
   padding: 10px 13px;
@@ -138,7 +147,7 @@ body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -1.1%;
-   overflow: hidden;
+  overflow: hidden;
   white-space: nowrap;
   animation: pulse 2s infinite;
 }
@@ -161,4 +170,360 @@ body {
 .message-btn img {
   width: 25px;
   height: 25px;
+}
+
+/*  RESPONSIVE CODES */
+
+
+@media screen and (max-width: 1050px) {
+
+ .footer-bottom-text {
+  padding-bottom: 20px;
+}
+}
+@media screen and (max-width: 900px) {
+  .footer-link {
+    display: flex;
+    gap: 30px;
+    padding: 25px 0;
+  }
+
+  .footer-link li {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+  }
+
+  #footer-logo {
+    max-width: 120px;
+    width: auto;
+    height: auto;
+  }
+
+  .call-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #b0b1b3;
+    padding-bottom: 20px;
+  }
+
+  #call-icon {
+    width: 40px;
+    height: auto;
+  }
+
+  .footer-section p {
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -1.1%;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  #phone-number {
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -1.1%;
+    color: #ffffff;
+  }
+
+  #phone-number img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .social-media {
+    display: flex;
+    gap: 36px;
+  }
+
+  .social-media li {
+    cursor: pointer;
+  }
+
+  .instagram,
+  .telegram,
+  .twitter,
+  .youtube,
+  .facebook {
+    color: #e7aa31;
+    font-size: 32px;
+  }
+
+ .footer-bottom-text {
+  padding-bottom: 20px;
+}
+
+ 
+
+ 
+}
+
+@media screen and (max-width: 770px) {
+  .footer-link {
+    display: flex;
+    gap: 25px;
+    padding: 25px 20px;
+  }
+
+  .footer-link li {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+  }
+
+  .footer-data {
+    display: flex;
+    gap: 10px;
+  }
+
+  #footer-logo {
+    max-width: 120px;
+    width: auto;
+    height: auto;
+  }
+
+  .call-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #b0b1b3;
+    padding-bottom: 20px;
+  }
+
+  #call-icon {
+    width: 32px;
+    height: auto;
+  }
+
+  #phone-number {
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -1.1%;
+    color: #ffffff;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+  }
+
+  .social-media {
+    display: flex;
+    gap: 25px;
+  }
+
+  .social-media li {
+    cursor: pointer;
+  }
+
+  .instagram,
+  .telegram,
+  .twitter,
+  .youtube,
+  .facebook {
+    color: #e7aa31;
+    font-size: 28px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .message-btn {
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99;
+    display: flex;
+    gap: 10px;
+    padding: 10px 13px;
+    background: #171e3c;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: pulse 2s infinite;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 20px;
+  }
+
+  .footer-link li {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+  }
+
+  .footer-data {
+    display: flex;
+    gap: 10px;
+  }
+
+  #footer-logo {
+    max-width: 120px;
+    width: auto;
+    height: auto;
+  }
+
+  .call-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #b0b1b3;
+    padding-bottom: 20px;
+  }
+
+  #call-icon {
+    width: 32px;
+    height: auto;
+  }
+
+  #phone-number {
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -1.1%;
+    color: #ffffff;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+  }
+
+  .social-media {
+    display: flex;
+    gap: 25px;
+  }
+
+  .social-media li {
+    cursor: pointer;
+  }
+
+  .instagram,
+  .telegram,
+  .twitter,
+  .youtube,
+  .facebook {
+    color: #e7aa31;
+    font-size: 28px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+ .footer-bottom-text {
+  padding-bottom: 30px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 20px;
+  }
+
+  .footer-link li {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+  }
+
+  .footer-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 0;
+  }
+
+  #footer-logo {
+    max-width: 120px;
+    width: auto;
+    height: auto;
+  }
+
+  .call-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #b0b1b3;
+    padding-bottom: 20px;
+  }
+
+  .footer-media {
+    width: 100%;
+  }
+
+  #phone-number {
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -1.1%;
+    color: #ffffff;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 32px;
+  }
+
+  .social-media {
+    display: flex;
+    gap: 25px;
+  }
+
+  .footer-section p {
+    margin: 10px 0;
+  }
+
+  .call-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #b0b1b3;
+    padding-bottom: 15px;
+  }
+
+  .message-btn {
+  right: 20px;
+  bottom: 10px;
+}
+
+.footer-bottom-text {
+  padding-bottom: 40px;
+}
 }

@@ -11,7 +11,12 @@ export default function SelectIndicator({ options }) {
       placeholder={placeValue}
       indicator={<KeyboardArrowDown />}
       sx={{
-        width: 120,
+        width: {
+          sm:"100%",
+          md:100,
+          lg:110,
+          xl:120
+        },
         background: "none",
         border: "none",
         borderColor: "none",
@@ -34,6 +39,11 @@ export default function SelectIndicator({ options }) {
      <Option
      key={element.id}
      value={`${element.value}`}
+     sx={{
+      width:{
+        md:"100%"
+      }
+     }}
      >
       {element.option}
      </Option>

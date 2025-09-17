@@ -1,35 +1,44 @@
 .hero-section {
   display: flex;
   justify-content: flex-start;
-align-items: center ;
+  align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-clip: content-box;
   background-size: cover;
   position: relative;
+
 }
+
+.hero-content{
+  padding: 50px 0;
+  width: 100%;
+}
+
 
 .hero-title {
   max-width: 800px;
   width: 100%;
   padding: 20px 15px;
-  border-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   background-color: #fff;
   border-top: 5px solid #b28f3d;
 }
 
 .hero-title h1 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 150%;
   letter-spacing: -1.1%;
   color: #003d7b;
 }
 
 .hero-title p {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   font-weight: 500;
   font-size: 20px;
   line-height: 150%;
@@ -51,26 +60,62 @@ align-items: center ;
   background: #003d7b;
   max-width: 950px;
   width: 100%;
-  border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
 .list-group li {
+  position: relative; 
   padding: 14px 0;
   width: 150px;
   text-align: center;
   cursor: pointer;
+  background-color: #0054AE59;
+  transition: background-color 0.3s ease;
 }
-
 
 .list-group a {
   color: #fff;
+  display: inline-block;
+  width: 100%;
   height: 100%;
 }
 
+.list-group li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  background: #BB8C33;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.list-group li:hover {
+  background-color: #0054AE; 
+  border-radius: 4px;
+}
+
+.list-group li:hover::after {
+  width: 100%; 
+}
+
 .list-group a.active {
-  /* padding-bottom: 20px; */
-  border-bottom-color: 2px solid #b28f3d;
+  font-weight: 600;
+}
+
+.list-group a.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 4px;
+  background: #BB8C33;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 .marquee-wrapper {
@@ -97,3 +142,24 @@ align-items: center ;
     transform: translateX(-100%);
   }
 }
+
+@media screen  and (max-width:600px) {
+  .hero-title h1 {
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  text-align: center;
+}
+}
+
+@media screen  and (max-width:500px) {
+  .hero-title h1 {
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  text-align: center;
+}
+}
+
+
+

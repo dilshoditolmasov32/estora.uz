@@ -1,0 +1,84 @@
+.contract-page {
+  width: 100%;
+  padding-bottom: 70px;
+  background-image: url("../../assets/images/shartnomaBg.svg");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 70px;
+}
+
+#contract-heroImg {
+  width: 100%;
+}
+
+.shartnoma-list h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -1.1%;
+  color: #2c2e35;
+}
+
+.shartnoma-list p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  color: #2c2e35;
+  margin-bottom: 50px;
+}
+
+.shartnoma-list h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -1.1%;
+  color: #2c2e35;
+}
+
+.oferta-text,
+#contract-rules li {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  color: #2c2e35;
+}
+
+.oferta-text{
+    margin-bottom: 50px;
+}
+
+.shartnoma-predmeti{
+    margin-top: 20px;
+}
+
+.rulesEnd-text span {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  color: #2c2e35;
+}
+
+.contract-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.prev-btn,
+.next-btn {
+  border-radius: 5px;
+  background-color: #bb8c33;
+  color: #fff;
+  font-size: 18px;
+  padding: 3px 20px;
+  cursor: pointer;
+}

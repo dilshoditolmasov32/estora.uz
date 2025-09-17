@@ -62,16 +62,14 @@
   border-radius: 12px;
   cursor: pointer;
   margin-top: 60px;
-  transition: .5s;
-  transition: background-color .5s ease-in, box-shadow 0.3s ease;
-  
+  transition: 0.5s;
+  transition: background-color 0.5s ease-in, box-shadow 0.3s ease;
 }
 
-.contract-btn:hover{
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color:#B28F3D;
+.contract-btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #b28f3d;
   transform: scale(1.01);
-
 }
 
 .contract-btn p {
@@ -92,4 +90,339 @@
   width: 100%;
   height: 1px;
   background-color: #2c2e35;
+}
+
+@media screen and (max-width: 1024px) {
+  .agreement {
+    position: relative;
+    padding: 40px 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 36px;
+  }
+
+  .contract-title {
+    max-width: 500px;
+    width: 100%;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -1.1%;
+  }
+
+  .contract-text {
+    max-width: 600px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .contract-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 550px;
+    width: 100%;
+    padding: 15px 36px;
+    margin-top: 45px;
+  }
+
+  .contract-btn p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+  }
+
+  .contract-btn img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .agreement {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 80px;
+    gap: 30px;
+    margin-bottom: 36px;
+  }
+
+  .contract-title {
+    max-width: 500px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: -1.1%;
+  }
+
+  .contract-text {
+    max-width: 550px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .contract-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 550px;
+    width: 100%;
+    padding: 15px 30px;
+    margin-top: 45px;
+  }
+
+  .contract-btn p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+  }
+
+  .contract-btn img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 851px) {
+  .agreement {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0;
+    gap: 30px;
+    margin-bottom: 36px;
+  }
+
+  #contractImg {
+    max-width: 350px;
+    height: auto;
+  }
+
+  .contract-title {
+    max-width: 800px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: -1.1%;
+    margin-bottom: 10px;
+  }
+
+  .contract-text {
+    max-width: 800px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 130%;
+    margin: 10px 0;
+  }
+
+  .contract-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 550px;
+    width: 100%;
+    padding: 15px 30px;
+    margin-top: 45px;
+    margin: 30px auto;
+  }
+
+  .contract-btn p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+  }
+
+  .contract-btn img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contract-bottom__line {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    height: 1px;
+    background-color: #2c2e35;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .agreement {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0;
+    gap: 30px;
+    margin-bottom: 36px;
+  }
+
+  #contractImg {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .contract-title {
+    max-width: 500px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -1.1%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .contract-text {
+    max-width: 800px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 130%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .contract-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 550px;
+    width: 100%;
+    padding: 15px;
+    margin: 25px auto;
+  }
+
+  .contract-btn p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .contract-title {
+    max-width: 600px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: -1.1%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .contract-text {
+    max-width: 800px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 130%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .contract-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 550px;
+    width: 100%;
+    padding: 12px 10px;
+    margin: 20px auto;
+  }
+
+  .contract-btn p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+  }
+
+  .contract-btn img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contract-title {
+    max-width: 600px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: -1.1%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .contract-text {
+    max-width: 800px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 130%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .contract-btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contract-btn p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+  }
+
+  .contract-btn img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contract-title {
+    max-width: 700px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -1.1%;
+    margin-bottom: 10px;
+  }
+
+  .contract-text {
+    max-width: 400px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .contract-btn p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+  }
+
+  #contractImg {
+    max-width: 300px;
+
+    width: 100%;
+  }
 }

@@ -2,7 +2,7 @@ import { FiYoutube } from "react-icons/fi";
 import { TbBrandTelegram } from "react-icons/tb";
 import { SlSocialFacebook } from "react-icons/sl";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
-import logo from "../../assets/images/footerLogo.svg";
+import logo from "../../assets/images/footerlogoIcon.svg";
 import phoneNumber from "../../assets/images/operatorCall.svg";
 import message from "../../assets/images/message.svg";
 
@@ -31,7 +31,7 @@ const Footer = () => {
               bildirganingizni angalatadi.
             </p>
           </div>
-          <div>
+          <div className="footer-media">
             <p>O’zbekiston bo’ylab barcha qo’ng’iroqlar bepul</p>
             <div className="call-number">
               <img src={phoneNumber} alt="call icon" id="call-icon" />
@@ -82,10 +82,12 @@ const Footer = () => {
         </p>
       </div>
 
-      <button className="message-btn">
+     <div className="container">
+       <button className="message-btn">
         <img src={message} alt="message icon" />
         <span> Savollaringiz bormi? Biz aloqadamiz.</span>
       </button>
+     </div>
     </section>
   );
 };

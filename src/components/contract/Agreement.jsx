@@ -19,11 +19,12 @@ const Agreement = () => {
               manfaatlarini himoya qilish, shaffoﬂik va ishonchni ta’minlash
               uchun joriy etilgan.
             </p>
-
+            <a href="./contract">
             <button className="contract-btn">
               <p>Rasmiy shartnoma asosida davom etish</p>
               <img src={pen} alt="ruchka icon" />
             </button>
+            </a>
           </div>
         <div  className="contract-bottom__line"></div>
         </div>

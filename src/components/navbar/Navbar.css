@@ -11,20 +11,29 @@
   gap: 10px;
 }
 
-.navbar-links, .navbar-media{
+.navbar-links,
+.navbar-media {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 25px;
 }
 
-.navbar-links ul li{
+.navbar-links ul li a {
   cursor: pointer;
-font-weight: 600;
-font-size: 20px;
-line-height: 120%;
-letter-spacing: -1.1%;
-color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -1.1%;
+  color: #fff;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.navbar-links ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 #phone-icon,
@@ -43,10 +52,83 @@ color: #fff;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: -1.1%;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.email-link:hover,
+.phone-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .small-line {
   width: 2px;
   height: 40px;
   background-color: #fff;
+}
+
+@media screen and (max-width: 1025px) {
+  .navbar-section ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navbar-section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navbar-section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .navbar-section {
+    padding: 10px 0;
+    background-color: #bb8c33;
+  }
+
+  .navbar-section ul {
+    width: 60%;
+  }
+
+  .navbar-links,
+  .navbar-media {
+    display: flex;
+    gap: 10px;
+  }
+
+  .navbar-links ul li a {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  #phone-icon,
+  #email-icon {
+    display: none;
+  }
+
+  .email-link,
+  .phone-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  .small-line {
+    width: 2px;
+    height: 30px;
+    background-color: #fff;
+  }
 }

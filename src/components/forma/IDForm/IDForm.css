@@ -1,0 +1,112 @@
+.IDForm-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.IDForm-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 40px;
+  border: 2px solid #bb8c33;
+}
+
+.IDForm-title {
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  color: #2c2e35;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.IDForm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.IDForm-card input,
+.IDForm-card select,
+.IDForm-card textarea {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #bb8c33;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #2c2e35;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  outline: none;
+  text-transform: capitalize;
+}
+
+.IDForm-card input::placeholder,
+.IDForm-card select::placeholder,
+.IDForm-card textarea::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  color: #ebecec;
+}
+
+textarea {
+  margin-top: 15px;
+  min-height: 80px;
+  resize: none;
+}
+
+.id-upload {
+  margin: 15px 0;
+  text-align: right;
+}
+
+.upload-btn {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.currency-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.IDForm-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn.back {
+  background: #e6e6e6;
+}
+
+.btn.submit {
+  background: goldenrod;
+  color: #fff;
+}
+
+.IDForm-footer {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  color: #555;
+}
